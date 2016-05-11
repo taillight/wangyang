@@ -1,0 +1,40 @@
+.treasurewrap{
+	padding: 10px 10px 0;
+}
+.treasurewrap li{
+	width: 100%;
+	height: 100px;
+	background-color: #2dbd84;
+	border-radius: 5px;
+}
+.treasurewrap li .treasurelistleft,.treasurewrap li .treasurelistcenter,.treasurewrap li .treasurelistright{
+	float: left;
+	height: 100%;
+}
+.treasurewrap li .treasurelistleft{
+	width: 30%;
+}
+.treasurewrap li .treasurelistcenter{
+	width: 50%;
+}
+.treasurewrap li .treasurelistright{
+	width: 20%;
+}
+.treasurewrap li .treasurelistright{
+	background: url("img/treasurelistgo.jpg") no-repeat center center;
+	background-size: 40px 40px;
+}
+.treasurewrap li .treasurelistcenter .treasurelist-tit{
+	color: #fff;
+	font-size: 16px;
+	margin-top: 28px;
+}
+.treasurewrap li .treasurelistcenter .treasurelist-intro{
+	color: #caffea;
+	font-size: 13px;
+	margin-top: 5px;
+}
+.treasurewrap li .treasure-auxiliary{
+	background: url("img/treasuretitbg.jpg") no-repeat center center;
+	background-size: 70px 70px;
+}

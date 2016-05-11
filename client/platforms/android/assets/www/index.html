@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default theme - jQuery Mobile Demos</title>
+	<link rel="stylesheet" href="libs/jquery.mobile-1.4.5.css">
+</head>
+<body>
+<div data-role="page" id="login">
+
+	<div class="ui-content" role="main">
+
+		<div style="text-align: center; padding:40px;">
+					<img src="images/logo.png" style="text-align: center;" />
+		</div>
+
+		<form>
+			<div id="ui-bar-form" class="ui-bar">
+				<input type="text" name="username" id="username" value="" placeholder="用户名" />
+				<input type="password" name="password" id="password" value="" placeholder="密码" />
+
+				<a href="#choose" class="ui-btn ui-corner-all ui-shadow">登录</a>
+			</div>
+
+		</form>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+
+
+
+
+<div data-role="page" id="choose">
+
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+		<h1 class="ui-title" role="heading" aria-level="1"></h1>
+		<a href="#login" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
+	</div>
+
+	<div class="ui-content" role="main">
+		<table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
+		<thead>
+		<tr>
+		<th data-priority="2">编号</th>
+		<th>线路名称</th>
+		<th data-priority="3">属地单位</th>
+		<th data-priority="1">现场情况</th>
+		<th data-priority="5">发现人</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<th>1</th>
+		<td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+		<td>1941</td>
+		<td>100%</td>
+		<td>74</td>
+		</tr>
+		<tr>
+		<th>2</th>
+		<td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+		<td>1942</td>
+		<td>97%</td>
+		<td>64</td>
+		</tr>
+		<tr>
+		<th>3</th>
+		<td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+		<td>1972</td>
+		<td>97%</td>
+		<td>87</td>
+		</tr>
+		<tr>
+		<th>4</th>
+		<td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
+		<td>1939</td>
+		<td>96%</td>
+		<td>87</td>
+		</tr>
+		<tr>
+		<th>5</th>
+		<td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+		<td>1962</td>
+		<td>94%</td>
+		<td>87</td>
+		</tr>
+		<tr>
+		<th>6</th>
+		<td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+		<td>1964</td>
+		<td>92%</td>
+		<td>74</td>
+		</tr>
+		<tr>
+		<th>7</th>
+		<td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+		<td>1967</td>
+		<td>91%</td>
+		<td>122</td>
+		</tr>
+		<tr>
+		<th>8</th>
+		<td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+		<td>1939</td>
+		<td>90%</td>
+		<td>72</td>
+		</tr>
+		<tr>
+		<th>9</th>
+		<td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+		<td>1952</td>
+		<td>89%</td>
+		<td>85</td>
+		</tr>
+		<tr>
+		<th>10</th>
+		<td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+		<td>2010</td>
+		<td>84%</td>
+		<td>78</td>
+		</tr>
+		</tbody>
+		</table>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#popupMenu" data-rel="popup" data-transition="slideup" data-icon="bullets">录入</a></li>
+				<li><a href=""  data-icon="edit">审批</a></li>
+				<li><a href=""  data-icon="gear">处理</a></li>
+				<li><a href=""  data-icon="check">验收</a></li>
+				<li><a href=""  data-icon="search">查询</a></li>
+			</ul>
+		</div>
+		<div data-role="popup" id="popupMenu">
+			<ul data-role="listview" data-inset="true" style="min-width:210px;">
+				<li data-role="list-divider">请选择</li>
+				<li><a href="#insert_tree">树障</a></li>
+				<li><a href="#">外破</a></li>
+				<li><a href="#">联系单</a></li>
+			</ul>
+		</div>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="insert_tree">
+
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+		<h1 class="ui-title" role="heading" aria-level="1">录入</h1>
+		<a href="#login" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
+	</div>
+
+	<div class="ui-content" role="main">
+		<form>
+			<div id="ui-bar-form" class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-field-contain">
+					<label for="treeNo">树障编号</label>
+					<input type="text" name="treeNo" id="treeNo" value="" />
+					<p/>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="treeLevel">级别</label>
+							<select name="treeLevel" id="treeLevel">
+								<option value="1">一级</option>
+								<option value="2">二级</option>
+								<option value="3">三级</option>
+								<option value="4">四级</option>
+							</select>
+						</div>
+						<div class="ui-block-b">
+							<label for="lineName">线路名称</label>
+							<select name="lineName" id="lineName">
+								<option value="1">一线</option>
+								<option value="2">二线</option>
+								<option value="3">三线</option>
+								<option value="4">四线</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="towerNo">杆塔号</label>
+							<select name="towerNo" id="towerNo">
+								<option value="1">#1</option>
+								<option value="2">#2</option>
+								<option value="3">#3</option>
+								<option value="4">#4</option>
+							</select>
+						</div>
+						<div class="ui-block-b">
+							<label for="eLevel">电压等级</label>
+							<select name="eLevel" id="eLevel">
+								<option value="1">220</option>
+								<option value="2">110</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="select-custom-1">行政区域</label>
+							<input type="text" name="area" id="area" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="position">植被相对位置</label>
+							<input type="text" name="position" id="position" value="" />
+						</div>
+					</fieldset>
+
+					<label for="acreage">茅草（杂草）砍伐面积（平方米）</label>
+					<input type="number" name="acreage" pattern="[0-9.0-9]*" id="acreage" value="">
+					<p/>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="treeType">树种</label>
+							<input type="text" name="treeType" id="treeType" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="treeTall">树高（米）</label>
+							<input type="number" name="treeTall" pattern="[0-9.0-9]*" id="treeTall" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="tall">净空距离（米）</label>
+							<input type="text" name="tall" id="tall" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="treeCount">树障（棵）</label>
+							<input type="number" name="treeCount" pattern="[0-9.0-9]*" id="treeCount" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="terrain">地形</label>
+							<select name="terrain" id="terrain">
+								<option value="1">山地</option>
+								<option value="2">平原</option>
+								<option value="2">丘陵</option>
+								<option value="2">高原</option>
+								<option value="2">盆地</option>
+							</select>
+						</div>
+						<div class="ui-block-b">
+							<label for="contactMobile">联系人电话</label>
+							<input type="number" name="contactMobile" id="contactMobile" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="units">属地单位</label>
+							<input type="text" name="units" id="units" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="task">任务来源</label>
+							<input type="number" name="task" id="task" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="finder">发现人</label>
+							<input type="text" name="finder" id="finder" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="findTime">发现时间</label>
+							<input type="date" data-role="date" id="findTime" name="findTime">
+						</div>
+					</fieldset>
+
+					<label for="siteImg">现场图片</label>
+					<a id="siteImg" href="" class="ui-btn ui-corner-all ui-shadow">拍照</a>
+					<div id="tree_pic" style="text-align: center; padding:40px; display: none;">
+								<img src="" style="text-align: center;" />
+					</div>
+					<p/>
+					<label for="site">现场情况</label>
+					<textarea name="site" id="site"></textarea>
+
+				</div>
+
+
+
+			</div>
+		</form>
+	</div><!-- /content -->
+
+</div>
+
+
+
+
+
+
+<div data-role="page" id="insert_broken">
+
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+		<h1 class="ui-title" role="heading" aria-level="1">录入</h1>
+		<a href="#login" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
+	</div>
+
+	<div class="ui-content" role="main">
+		<form>
+			<div id="ui-bar-form" class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-field-contain">
+					<label for="brokenNo">外破编号</label>
+					<input type="text" name="brokenNo" id="brokenNo" value="" />
+					<p/>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="brokenType">类型</label>
+							<select name="brokenType" id="brokenType">
+								<option value="1">修路</option>
+								<option value="2">建房</option>
+								<option value="3">取挖土</option>
+								<option value="4">管道穿越</option>
+								<option value="5">线路穿越</option>
+								<option value="6">其它</option>
+							</select>
+						</div>
+						<div class="ui-block-b">
+							<label for="lineNameb">线路名称</label>
+							<select name="lineNameb" id="lineNameb">
+								<option value="1">一线</option>
+								<option value="2">二线</option>
+								<option value="3">三线</option>
+								<option value="4">四线</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="towerNob">杆塔号</label>
+							<select name="towerNob" id="towerNob">
+								<option value="1">#1</option>
+								<option value="2">#2</option>
+								<option value="3">#3</option>
+								<option value="4">#4</option>
+							</select>
+						</div>
+						<div class="ui-block-b">
+							<label for="elevelb">电压等级</label>
+							<select name="elevelb" id="elevelb">
+								<option value="1">220</option>
+								<option value="2">110</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="positionb">地理位置</label>
+							<input type="text" name="positionb" id="positionb" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="tools">施工机具</label>
+							<input type="text" name="tools" id="tools" value="" />
+						</div>
+					</fieldset>
+
+					<label for="pro">项目名称</label>
+					<input type="text" name="pro" id="pro" value="">
+					<p/>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="tree_house">现场植树建房情况</label>
+							<input type="text" name="tree_house" id="tree_house" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="securityProtocol">签到安全协议情况</label>
+							<input type="text" name="securityProtocol" id="securityProtocol" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="chargerMobile">现场负责人电话</label>
+							<input type="text" name="chargerMobile" id="chargerMobile" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="Owner">业主方及电话</label>
+							<input type="text" name="Owner" id="Owner" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="construction">施工方及电话</label>
+							<input type="text" name="construction" id="construction" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="azimuth">跨越、钻越距离方位</label>
+							<input type="text" name="azimuth" id="azimuth" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="measures">已采取措施</label>
+							<input type="text" name="measures" id="measures" value="">
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="progress">工程施工进度情况</label>
+							<input type="text" name="progress" id="progress" value=""  />
+						</div>
+						<div class="ui-block-b">
+							<label for="schedule">计划工期</label>
+							<input type="text" name="schedule" id="schedule" value=""  />
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="unitb">属地单位</label>
+							<input type="text" name="unitb" id="unitb" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="taskb">任务来源</label>
+							<input type="text" name="taskb" id="taskb" value="" />
+						</div>
+					</fieldset>
+
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<label for="finderb">发现人</label>
+							<input type="text" name="finderb" id="finderb" value="" />
+						</div>
+						<div class="ui-block-b">
+							<label for="findTimeb">发现时间</label>
+							<input type="text" name="findTimeb" id="findTimeb" value="" data-clear-btn="true" />
+						</div>
+					</fieldset>
+
+					<label for="siteImgb">现场图片</label>
+					<input type="file" name="siteImgb" id="siteImgb" value="">
+					<p/>
+					<label for="siteb">现场情况</label>
+					<textarea name="siteb" id="siteb"></textarea>
+
+				</div>
+
+
+
+			</div>
+		</form>
+	</div><!-- /content -->
+
+</div>
+
+
+
+</body>
+
+
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/jquery.mobile-1.4.5.js"></script>
+<!-- <script type="text/javascript" src="cordova.js"></script> -->
+<script src="js/init.js"></script>
+<script src="js/page.login.js"></script>
+<script src="js/page.choose.js"></script>
+<script src="js/page.insert_tree.js"></script>
+
+</html>
