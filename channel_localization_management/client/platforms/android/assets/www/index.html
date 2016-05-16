@@ -45,12 +45,11 @@
 	</div>
 
 	<div data-iscroll="" data-role="content" id="wrapper">
-		<div class="iscroll-scroller">
-			<div class="iscroll-pulldown" style="margin: -1em -1em 0em -1em;">
+			<div class="iscroll-pulldown">
         <span class="iscroll-pull-icon"></span>
-        <span class="iscroll-pull-label"></span>
+        <span data-iscroll-pulled-text="松开更新！" data-iscroll-loading-text="加载中..." class="iscroll-pull-label">下拉刷新...</span>
       </div>
-			<ul data-role="listview" style="margin: 0em -1em;">
+			<ul data-role="listview" >
 				<li>
 					<p><strong>树障201605112107</strong></p>
 					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
@@ -136,11 +135,10 @@
 					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
 				</li>
 			</ul>
-			<div class="iscroll-pullup" style="margin: -1em;">
+			<div class="iscroll-pullup">
         <span class="iscroll-pull-icon"></span>
-        <span class="iscroll-pull-label"></span>
+        <span data-iscroll-pulled-text="松开更新！" data-iscroll-loading-text="加载中..." class="iscroll-pull-label">上拉加载更多...</span>
       </div>
-		</div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
@@ -493,7 +491,7 @@
 <script src="libs/jquery-2.1.4.min.js"></script>
 <script src="libs/jquery.mobile-1.4.5.js"></script>
 <script src="libs/iscroll.js" type="text/javascript"></script>
-<!-- <script src="libs/jquery.mobile.iscrollview.js" type="text/javascript"></script> -->
+<script src="libs/jquery.mobile.iscrollview.js" type="text/javascript"></script>
 <!-- <script type="text/javascript" src="cordova.js"></script> -->
 <script src="js/init.js"></script>
 <script src="js/page.login.js"></script>
