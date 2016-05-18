@@ -42,14 +42,15 @@
 	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" data-position="fixed" data-tap-toggle="false">
 		<h1 class="ui-title" role="heading" aria-level="1"></h1>
 		<a href="#login" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
+		<a href="#popupMenu" data-rel="popup" data-transition="slidedown" class="ui-btn-icon-right ui-btn ui-icon-plus ui-shadow ui-corner-all">录入</a>
 	</div>
 
-	<div data-iscroll="" data-role="content" id="wrapper">
+	<div data-iscroll="" data-role="content" id="choose-wrapper" class="ui-content">
 			<div class="iscroll-pulldown">
         <span class="iscroll-pull-icon"></span>
         <span data-iscroll-pulled-text="松开更新！" data-iscroll-loading-text="加载中..." class="iscroll-pull-label">下拉刷新...</span>
       </div>
-			<ul data-role="listview" >
+			<ul id="choose-listview" data-role="listview" >
 				<li>
 					<p><strong>树障201605112107</strong></p>
 					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
@@ -79,60 +80,6 @@
 					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
 					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
 					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
-				</li>
-				<li>
-					<p><strong>外破201605112107</strong></p>
-					<h2>四川省公安厅直属二分局召开外力破坏</h2>
-					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
-					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-				</li>
-				<li>
-					<p><strong>树障201605112107</strong></p>
-					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
-					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
-					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
-				</li>
-				<li>
-					<p><strong>外破201605112107</strong></p>
-					<h2>四川省公安厅直属二分局召开外力破坏</h2>
-					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
-					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-				</li>
-				<li>
-					<p><strong>树障201605112107</strong></p>
-					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
-					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
-					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
-				</li>
-				<li>
-					<p><strong>外破201605112107</strong></p>
-					<h2>四川省公安厅直属二分局召开外力破坏</h2>
-					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
-					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-				</li>
-				<li>
-					<p><strong>树障201605112107</strong></p>
-					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
-					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
-					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
-				</li>
-				<li>
-					<p><strong>外破201605112107</strong></p>
-					<h2>四川省公安厅直属二分局召开外力破坏</h2>
-					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
-					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-				</li>
-				<li>
-					<p><strong>树障201605112107</strong></p>
-					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
-					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
-					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
-				</li>
-				<li>
-					<p><strong>外破201605112107</strong></p>
-					<h2>四川省公安厅直属二分局召开外力破坏</h2>
-					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
-					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
 				</li>
 			</ul>
 			<div class="iscroll-pullup">
@@ -141,16 +88,61 @@
       </div>
 	</div><!-- /content -->
 
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#popupMenu" data-rel="popup" data-transition="slideup" data-icon="bullets">录入</a></li>
-				<li><a href=""  data-icon="edit">审批</a></li>
-				<li><a href=""  data-icon="gear">处理</a></li>
-				<li><a href=""  data-icon="check">验收</a></li>
-				<li><a href=""  data-icon="search">查询</a></li>
+
+	<div data-iscroll="" data-role="content" id="approval-wrapper" class="ui-content">
+			<div class="iscroll-pulldown">
+        <span class="iscroll-pull-icon"></span>
+        <span data-iscroll-pulled-text="松开更新！" data-iscroll-loading-text="加载中..." class="iscroll-pull-label">下拉刷新...</span>
+      </div>
+			<ul id="approval-listview" data-role="listview" >
+				<li>
+					<p><strong>树障xxxxxxxxxxxx</strong></p>
+					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
+					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
+					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
+				</li>
+				<li>
+					<p><strong>外破oooooooooooo</strong></p>
+					<h2>四川省公安厅直属二分局召开外力破坏</h2>
+					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
+					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+				</li>
+				<li>
+					<p><strong>树障xxxxxxxxxxxx</strong></p>
+					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
+					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
+					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
+				</li>
+				<li>
+					<p><strong>外破oooooooooooo</strong></p>
+					<h2>四川省公安厅直属二分局召开外力破坏</h2>
+					<p class="ui-li-rside">武展&nbsp;&nbsp;&nbsp;艾永恒</p>
+					<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+				</li>
+				<li>
+					<p><strong>树障xxxxxxxxxxxx</strong></p>
+					<h2>为有效消除电力线路保护区内的树障隐患，确保夏季电网安全运行，近日，襄汾县供电公司按计划在城乡电力线路范围内开展树障集中清理工作</h2>
+					<p class="ui-li-rside">线路工区&nbsp;&nbsp;&nbsp;汪洋</p>
+					<p class="ui-li-aside"><strong>2016-2-4</strong></p>
+				</li>
 			</ul>
-		</div>
+			<div class="iscroll-pullup">
+        <span class="iscroll-pull-icon"></span>
+        <span data-iscroll-pulled-text="松开更新！" data-iscroll-loading-text="加载中..." class="iscroll-pull-label">上拉加载更多...</span>
+      </div>
+	</div><!-- /content -->
+
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<div data-role="navbar">
+				<ul id="navbar">
+					<li><a data-index="0" data-ajax="false" data-icon="bullets">列表</a></li>
+					<li><a data-index="1" data-ajax="false" data-icon="edit">审批</a></li>
+					<li><a data-index="2" data-icon="gear">处理</a></li>
+					<li><a data-index="3" data-icon="check">验收</a></li>
+					<li><a data-index="4" data-icon="search">查询</a></li>
+				</ul>
+			</div>
 		<div data-role="popup" id="popupMenu">
 			<ul data-role="listview" data-inset="true" style="min-width:210px;">
 				<li data-role="list-divider">请选择</li>
@@ -162,9 +154,6 @@
 	</div><!-- /footer -->
 
 </div><!-- /page -->
-
-
-
 
 
 
@@ -318,8 +307,6 @@
 	</div><!-- /content -->
 
 </div>
-
-
 
 
 
@@ -492,7 +479,7 @@
 <script src="libs/jquery.mobile-1.4.5.js"></script>
 <script src="libs/iscroll.js" type="text/javascript"></script>
 <script src="libs/jquery.mobile.iscrollview.js" type="text/javascript"></script>
-<!-- <script type="text/javascript" src="cordova.js"></script> -->
+<script type="text/javascript" src="cordova.js"></script>
 <script src="js/init.js"></script>
 <script src="js/page.login.js"></script>
 <script src="js/page.choose.js"></script>
